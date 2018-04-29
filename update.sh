@@ -1,11 +1,11 @@
 #!/bin/bash
-echo "欢迎使用十六哥的一键搭建向导"
-echo "即将搭建的是战术雷达4.27版本"
+echo "欢迎使用一键搭建向导"
+echo "即将搭建的是天空之眼最新版本"
 echo "准备开始安装"
 read -p "回车后开始安装"
 echo "请输入你的内网ip" 
 read -p "内网ip： " ip
-cp /root/winnerpubg/restart.sh /root/restart.sh
+cp /root/leida/restart.sh /root/restart.sh
 chmod +x restart.sh
 wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
 chmod +x shadowsocks-all.sh
@@ -28,8 +28,8 @@ cd libpcap-1.8.1
 make
 make install
 
-git clone https://github.com/hy0454/scichicken.git
-cd scichicken/
+git clone https://github.com/linlin8804/leida.git
+cd leida/
 npm i
 npm i -g pino
 npm install -g forever
